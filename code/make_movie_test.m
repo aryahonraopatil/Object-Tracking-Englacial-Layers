@@ -1,5 +1,4 @@
 %make layer movie for target tracking
-%updated 5/4/23 by R.Williams to make presentable for sharing, handle cases
 
 clear all
 close all
