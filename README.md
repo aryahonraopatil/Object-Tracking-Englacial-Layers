@@ -4,13 +4,24 @@ This study aims to examine existing methods for evaluating the quality of images
 
 ## What are englacial layers?
 
-Glaciers are formed when layers of snow build up on top of one another. Each layer of snow has a unique chemistry and texture. Over time, the snow's top layer compresses due to the weight of the layers beneath it, finally turning to ice. The ice also contains particles and dissolved substances that were caught by the snow as it fell. As layers of ice accumulate over time, they serve as a record of the climate conditions that prevailed at the time of creation. The ice layers are arranged according to years and seasons. Studying how and why climate changed in the past helps scientists predict climate change in the future. 
+Glaciers are formed when layers of snow build up on top of one another. Each layer of snow has a unique chemistry and texture. Over time, the snow's top layer compresses due to the weight of the layers beneath it, finally turning to ice. The ice also contains particles and dissolved substances that were caught by the snow as it fell. As layers of ice accumulate over time, they serve as a record of the climate conditions that prevailed at the time of creation. The ice layers are arranged according to years and seasons. Studying how and why climate changed in the past helps scientists predict climate change in the future.  
 
-Using radar data, the slopes of the englacial layers' can be calculated. Radargrams for glacial strata are produced using ground-penetrating radar (GPR) or ice-penetrating radar equipment. These radars generate electromagnetic waves that travel through the ice layers, and then reflect off of the ice's edges and internal interfaces. The radar system then creates radargrams by capturing the signals that are reflected. Radar data can be used to investigate ice sheet movement, spot areas of stress and strain, and forecast how the ice sheet will behave in the future. 
+![](images/englacial-layer.png)  
+
+Fig - Depiction of the various types of sediments associated with glaciation. The glacier is shown in cross-section.  
+
+Fig from Open textbook - Geology chp - How glaciers work - [http://water.usgs.gov/edu/gallery/glacier-satellite.html]  
+
+Using radar data, the slopes of the englacial layers' can be calculated. Radargrams for glacial strata are produced using ground-penetrating radar (GPR) or ice-penetrating radar equipment. These radars generate electromagnetic waves that travel through the ice layers, and then reflect off of the ice's edges and internal interfaces. The radar system then creates radargrams by capturing the signals that are reflected. Radar data can be used to investigate ice sheet movement, spot areas of stress and strain, and forecast how the ice sheet will behave in the future.   
 
 ## Layer Continuity and other problems
 
 Information on glacial layers and bedrock is generally obtained from radargrams. However, most of the information is extracted manually. Manual extraction is less efficient as it is subjected to various factors, such as human actions and emotions. Therefore, there is a need to develop automatic or semi-automatic methods for tracking layers in radiostratigraphic images. A major challenge of the automated extraction method is the small distance between the ice layers during extraction, which can lead to confusion and incorrect connection of multiple optional layers. Various methodologies have been developed for tracing hierarchical glacier continuity. Techniques such as manual selection of internal layers, iterative peak tracking, and pattern matching with ice models along with the automatic radio echo sounder processing (ARESP) algorithm, and the glacier droplet estimation algorithm for continuous wavelet transform peak detection have been developed. The lack of stratigraphic continuity in glacial strata makes it difficult to track, interpret and understand the history, behavior, and properties of ice sheets. 
+
+![](images/ice-sheet.png)
+
+Fig - Ice layers in a radargram.  
+
 
 ## Object Tracking
 
@@ -53,3 +64,13 @@ d. Add the frame and frame trail (if addTail is true) arrays to the frameArray a
 12. Process the movie frames for "tail" (if addTail is true) by fading the tail and combining it with the morphed frames.
 13. Write the frames to a video file.
 14. Close the video file.
+
+## Results
+
+### The layers in a .mat file  
+
+![](images/figure1.png)  
+
+### Zoomed-in layers diagram showing layer information  
+
+![](images/figure2.png)
